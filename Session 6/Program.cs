@@ -41,6 +41,19 @@
         }
         #endregion
 
+        #region Q3-(Method) Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers.
+        public static void Calculate(int[] Arr, out int sum, out int sub)
+        {
+            sum = Arr[0];
+            sub = Arr[0];
+            for (int i = 1; i < Arr.Length; i++)
+            {
+                sum += Arr[i];
+                sub -= Arr[i];
+            }
+        }
+        #endregion
+
         #endregion
 
 
@@ -76,7 +89,7 @@
 
             #endregion
 
-            #region Q2-(Method) Explain the difference between passing (Reference type parameters) by value and by reference then write a suitable c# example.
+            #region Q2- Explain the difference between passing (Reference type parameters) by value and by reference then write a suitable c# example.
             /*
              * Passing by value: means that a copy of the reference to the array is passed to the method
              * so changes made to the elements inside the method affect the original array
@@ -111,6 +124,28 @@
             //{
             //    Console.Write($"{numbers[i]} ");
             //}
+
+
+            #endregion
+
+            #region Q3- Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers.
+            //Console.WriteLine("Please enter 4 numbers: ");
+            //int[] numbers = new int[4];
+
+            //for (int i = 0; i < numbers.Length;)
+            //{
+            //    Console.Write($"Number {i + 1}: ");
+            //    bool isParse = int.TryParse(Console.ReadLine(), out numbers[i]);
+            //    if (isParse)
+            //    {
+            //        i++;
+
+            //    }
+            //}
+            //int sum, sub;
+            //Calculate(numbers, out sum, out sub);
+            //Console.WriteLine($"The summation of the numbers is: {sum}");
+            //Console.WriteLine($"The subtraction of the numbers is: {sub}");
 
 
             #endregion
