@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System.Diagnostics.Metrics;
+using System.Reflection;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Session_6
@@ -102,6 +103,27 @@ namespace Session_6
             //return new int[] {Sub,Sum};
             //return [Sum, Sub];
             //return new {Sum, Sub};
+        }
+
+        //-------------------------------------------- Part 13 --------------------------------------------
+        public static int SumArray3(int x, params int[] Arr)
+        {
+            int Sum = 0;
+            //Arr[0] = 100;
+            //Arr = new int[] { 100,200,300};
+            for (int i = 0; i < Arr.Length; i++)
+            {
+                Sum += Arr[i];
+            }
+            return Sum;
+        }
+
+        public static void Conact<T>(params ReadOnlySpan<T> items)
+        {
+            for (int i = 0; i < items.Length; i++)
+            {
+                Console.Write($"{items[i]} ");
+            }
         }
 
         #endregion
@@ -394,8 +416,25 @@ namespace Session_6
 
             #endregion
 
+            //-------------------------------------------- Part 13 --------------------------------------------
             #region Function Parameters[Params]
 
+            #region Before C# 13
+            //int[] Numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            //int Result = SumArray3(1, 2, 3, 4, 5, 6, 7, 8, 9);
+
+            //Console.WriteLine(Result);
+
+            //string Message = string.Format("Hello {0} Your Age is {1}", "Ahmed", 20);
+
+            //Console.WriteLine("Hello {0} Your Age is {1}", "Ahmed", 20);
+
+            #endregion
+
+            #region After C# 13
+            //Conact<object>("Hello Ahmed", "Welcome To Route", "Your Number is", 123456, "Date is", DateTime.Now);
+
+            #endregion
 
             #endregion
 
