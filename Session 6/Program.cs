@@ -31,6 +31,14 @@ namespace Session_6
             }
         }
 
+        //-------------------------------------------- Part 08 --------------------------------------------
+        public static void Swap(int X, int Y)
+        {
+            int Temp = X;
+            X = Y;
+            Y = Temp;
+        }
+
         #endregion
 
         static void Main(string[] args)
@@ -230,8 +238,25 @@ namespace Session_6
 
             #endregion
 
+            //-------------------------------------------- Part 08 --------------------------------------------
             #region Function Parameters[Value Type]
 
+            #region Passing by Value
+            //int A = 9;
+            //int B = 4;
+            //Console.WriteLine(A);
+            //Console.WriteLine(B);
+            //Console.WriteLine("After Swapping: ");
+            //Swap(A, B);
+            //Console.WriteLine(A);
+            //Console.WriteLine(B);
+
+            #endregion
+
+            #region Passing by Reference
+
+
+            #endregion
 
             #endregion
 
