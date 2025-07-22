@@ -1,7 +1,38 @@
-﻿namespace Session_6
+﻿using System.Reflection;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace Session_6
 {
     internal class Program
     {
+
+        //-------------------------------------------- Part 07 --------------------------------------------
+        // Types of Method
+        // 1. Class Member Function [static Function]
+        // 2. Object Member Function [Non-static Function]
+        // Employee => static Print , Non-static Select
+        // Employee.Print
+        // Employee Emp01 = new Employee();
+        // Emp01.Select
+        #region Methods
+        public static void PrintShape()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(":)");
+            }
+        }
+
+        public static void PrintShape(int Count = 5 , string Pattern =":(" )
+        {
+            for (int i = 0; i < Count; i++)
+            {
+                Console.WriteLine(Pattern);
+            }
+        }
+
+        #endregion
+
         static void Main(string[] args)
         {
             //-------------------------------------------- Part 02 --------------------------------------------
@@ -170,6 +201,54 @@
 
             //Array.Resize(ref Numbers, 10);
             //Array.
+
+            #endregion
+
+            //-------------------------------------------- Part 07 --------------------------------------------
+            #region Functions
+
+            #region Function Prototype
+            //PrintShape();
+
+            //PrintShape(10, ":)");
+            //PrintShape(Pattern:":)",Count:10);
+            //PrintShape(10, "123");
+            //PrintShape(Pattern:"+L+");
+            //PrintShape(Pattern:@"/*\");
+
+            //Console.WriteLine("Welcome Mostafa\nHello Amr");
+            //Console.WriteLine("Welcome Mostafa\tHello Amr");
+            //Console.WriteLine("Welcome Mostafa\rHello Amr");
+            //Console.WriteLine("Welcome Mostafa\\Hello Amr");
+            //Console.WriteLine("Welcome Mostafa\bHello Amr");
+
+            //D:\Course .NET\02 C# Basics\Session 06\Answer\C44-G03-C#06\Session 6\Session 6.csproj
+            //Console.WriteLine("D:\\Course .NET\\02 C# Basics\\Session 06\\Answer\\C44-G03-C#06\\Session 6\\Session 6.csproj");
+            //Console.WriteLine(@"D:\Course .NET\02 C# Basics\Session 06\Answer\C44-G03-C#06\Session 6\Session 6.csproj");
+
+
+
+            #endregion
+
+            #region Function Parameters[Value Type]
+
+
+            #endregion
+
+            #region Function Parameters[Reference Type]
+
+
+            #endregion
+
+            #region Function Parameters[Passing By out]
+
+
+            #endregion
+
+            #region Function Parameters[Params]
+
+
+            #endregion
 
             #endregion
 
