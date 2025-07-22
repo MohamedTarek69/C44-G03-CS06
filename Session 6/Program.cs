@@ -68,6 +68,31 @@ namespace Session_6
             }
             return Sum;
         }
+        //-------------------------------------------- Part 11 --------------------------------------------
+        public static int SumArray2(int[] Arr)
+        {
+            int Sum = 0;
+            //Arr[0] = 100;
+            Arr = new int[] { 10, 20, 30, 40 };
+            for (int i = 0; i < Arr.Length; i++)
+            {
+                Sum += Arr[i];
+            }
+            return Sum;
+        }
+
+        public static int SumArray2(ref int[] Arr)
+        {
+            int Sum = 0;
+            //Arr[0] = 100;
+            Arr = new int[] { 10, 20, 30, 40 };
+            for (int i = 0; i < Arr.Length; i++)
+            {
+                Sum += Arr[i];
+            }
+            return Sum;
+        }
+
 
         #endregion
 
@@ -319,6 +344,30 @@ namespace Session_6
             ////int[] Arr = Numbers;
 
             //Console.WriteLine(SumArray(ref Numbers));
+            //Console.WriteLine(Numbers[0]);
+
+
+            #endregion
+
+            //-------------------------------------------- Part 11 --------------------------------------------
+            #region Passing By Value
+            //int[] Numbers = { 1, 2, 3 };
+
+            ////int[] Arr = Numbers;
+
+            //Console.WriteLine(SumArray2(Numbers));
+            //Console.WriteLine(Numbers[0]);
+
+
+
+            #endregion
+
+            #region Passing By Reference
+            //int[] Numbers = { 1, 2, 3 };
+
+            ////int[] Arr = Numbers;
+
+            //Console.WriteLine(SumArray2(ref Numbers));
             //Console.WriteLine(Numbers[0]);
 
 
