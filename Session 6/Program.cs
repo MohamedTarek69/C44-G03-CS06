@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.Metrics;
+﻿using System;
+using System.Diagnostics.Metrics;
 using System.Reflection;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -456,16 +457,66 @@ namespace Session_6
             #endregion
 
             #region Unboxing[Reference Type => Value Type]
-            object obj = 10;
+            //object obj = 10;
 
-            //string Name = (string)obj;
-            int X = (int)obj;
+            ////string Name = (string)obj;
+            //int X = (int)obj;
 
-            Console.WriteLine(X);
+            //Console.WriteLine(X);
+
+            #endregion
+
+            #endregion
+
+            //-------------------------------------------- Part 15 (Part 2 in Session 1 OOP) --------------------------------------------
+            #region Nullable value types
+
+            #region Example 01
+
+            //int? Age;
+            //int X = 10;
+            ////X = null;// Invlaid
+
+            //Nullable<int> Y = 10;
+            //Y = null; // valid
+
+            //int? Z = 100;
+            //Z = null;
+
+            //Console.WriteLine(Z);
+
+            #endregion
+
+            #region Example 02[Casting From nullable type to non-nullable type]
+            //int X = 10;
+            //int? Y = X;
+            //// Implicit Casting
+
+            //int? A = 10;
+            //int B = (int)A;
+            //// Explicit Casting
+
+            //if (A is not null)
+            //    B = A.Value;
+            //else
+            //    B = 0;
+
+            //if (A.HasValue)
+            //    B = (int)A;
+            //else
+            //    B = 0;
+
+            //B = A.HasValue ? (int)A : 0;
+            //B = A.HasValue ? A.Value : 0;
+
+            //B = A ?? 0;
+
+            //B = A.GetValueOrDefault();
 
             #endregion
 
             #endregion
+
         }
     }
 }
