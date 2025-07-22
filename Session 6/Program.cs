@@ -54,9 +54,25 @@
         }
         #endregion
 
+        #region Q4-(Method) Write a program in C# Sharp to create a function to calculate the sum of the individual digits of a given number
+        /*
+         Output should be like 
+         Enter a number: 25                                                                                            
+         The sum of the digits of the number 25 is: 7
+        */
+        public static int SumOfDigits(int number)
+        {
+            int sum = 0;
+            while (number > 0)
+            {
+                sum += number % 10;
+                number /= 10;
+            }
+            return sum;
+        }
         #endregion
 
-
+        #endregion
         static void Main(string[] args)
         {
             #region Q1- Explain the difference between passing (Value type parameters) by value and by reference then write a suitable c# example.
@@ -146,6 +162,23 @@
             //Calculate(numbers, out sum, out sub);
             //Console.WriteLine($"The summation of the numbers is: {sum}");
             //Console.WriteLine($"The subtraction of the numbers is: {sub}");
+
+
+            #endregion
+
+            #region Q4- Write a program in C# Sharp to create a function to calculate the sum of the individual digits of a given number
+            /*
+             Output should be like 
+             Enter a number: 25                                                                                            
+             The sum of the digits of the number 25 is: 7
+             */
+            //Console.Write("Please enter a number to calculate the sum of its digits: ");
+            //bool isParse = int.TryParse(Console.ReadLine(), out int number);
+            //if (isParse)
+            //{
+            //    int sum = SumOfDigits(number);
+            //    Console.WriteLine($"The sum of the digits of the number is: {sum}");
+            //}
 
 
             #endregion
