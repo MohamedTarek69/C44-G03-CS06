@@ -42,10 +42,10 @@
         #endregion
 
         #region Q3-(Method) Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers.
-        public static void Calculate(int num1, int num2,int num3, int num4, out int sum, out int sub)
+        public static void Calculate(int num1, int num2, out int sum, out int sub)
         {
-            sum = num1 + num2 + num3 + num4;
-            sub = num1 - num2 - num3 - num4;
+            sum = num1 + num2;
+            sub = num1 - num2;
         }
         #endregion
 
@@ -106,6 +106,18 @@
             for (int i = 2; i <= number; i++)
                 result *= i;
             return result;
+        }
+        #endregion
+
+        #region Q8-(method) Create a function named "ChangeChar" to modify a letter in a certain position (0 based) of a string, replacing it with a different letter
+        public static string ChangeChar(string input, int position, char newChar)
+        {
+            if (position < 0 || position >= input.Length)
+                return input;
+
+            char[] chars = input.ToCharArray();
+            chars[position] = newChar;
+            return new string(chars);
         }
         #endregion
 
@@ -178,25 +190,19 @@
             //    Console.Write($"{numbers[i]} ");
             //}
 
-
             #endregion
 
             #region Q3- Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers.
-            //Console.WriteLine("Please enter 4 numbers: ");
+            //Console.WriteLine("Please enter 2 numbers: ");
             //int num1, num2, num3, num4;
             //Console.Write("Number 1: ");
             //int.TryParse(Console.ReadLine(), out num1);
             //Console.Write("Number 2: ");
             //int.TryParse(Console.ReadLine(), out num2);
-            //Console.Write("Number 3: ");
-            //int.TryParse(Console.ReadLine(), out num3);
-            //Console.Write("Number 4: ");
-            //int.TryParse(Console.ReadLine(), out num4);
             //int sum, sub;
-            //Calculate(num1, num2, num3, num4, out sum, out sub);
+            //Calculate(num1, num2, out sum, out sub);
             //Console.WriteLine($"The summation of the numbers is: {sum}");
             //Console.WriteLine($"The subtraction of the numbers is: {sub}");
-
 
             #endregion
 
@@ -214,7 +220,6 @@
             //    int sum = SumOfDigits(number);
             //    Console.WriteLine($"The sum of the digits of the number is: {sum}");
             //}
-
 
             #endregion
 
@@ -234,6 +239,7 @@
             //        Console.WriteLine($"{number} is not a prime number.");
             //    }
             //}
+
             #endregion
 
             #region Q6- Create a function named MinMaxArray, to return the minimum and maximum values stored in an array, using reference parameters
@@ -271,8 +277,31 @@
             //{
             //    goto retry;
             //}
+
             #endregion
 
+            #region Q8- Create a function named "ChangeChar" to modify a letter in a certain position (0 based) of a string, replacing it with a different letter
+
+            //Console.Write("Please enter a string: ");
+            //string? input = Console.ReadLine();
+            //retry:
+            //Console.Write("Please enter the position of the character to change (0 based): ");
+            //int position;
+            //bool isParse = int.TryParse(Console.ReadLine(), out position);
+            //if (isParse && position >= 0 && position < input?.Length)
+            //{
+            //    Console.Write("Please enter the new character: ");
+            //    char newChar;
+            //    char.TryParse(Console.ReadLine(), out newChar);
+            //    string modifiedString = ChangeChar(input, position, newChar);
+            //    Console.WriteLine($"Modified string: {modifiedString}");
+            //}
+            //else
+            //{
+            //    goto retry;
+            //}
+
+            #endregion
 
         }
     }
