@@ -60,6 +60,7 @@
          Enter a number: 25                                                                                            
          The sum of the digits of the number 25 is: 7
         */
+
         public static int SumOfDigits(int number)
         {
             int sum = 0;
@@ -69,6 +70,20 @@
                 number /= 10;
             }
             return sum;
+        }
+        #endregion
+
+        #region Q5-(Method) Create a function named "IsPrime", which receives an integer number and returns true if it is prime, or false if it is not
+        public static bool IsPrime(int number)
+        {
+            if (number <= 1) 
+                return false;
+            for (int i = 2; i <= Math.Sqrt(number); i++)
+            {
+                if (number % i == 0)
+                    return false;
+            }
+            return true;
         }
         #endregion
 
@@ -172,6 +187,7 @@
              Enter a number: 25                                                                                            
              The sum of the digits of the number 25 is: 7
              */
+
             //Console.Write("Please enter a number to calculate the sum of its digits: ");
             //bool isParse = int.TryParse(Console.ReadLine(), out int number);
             //if (isParse)
@@ -183,6 +199,23 @@
 
             #endregion
 
+            #region Q5- Create a function named "IsPrime", which receives an integer number and returns true if it is prime, or false if it is not
+            //Console.Write("Please enter a number to check if it is prime: ");
+            //int number;
+            //bool isParse = int.TryParse(Console.ReadLine(), out number);
+            //if (isParse)
+            //{
+            //    bool isPrime = IsPrime(number);
+            //    if (isPrime)
+            //    {
+            //        Console.WriteLine($"{number} is a prime number.");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"{number} is not a prime number.");
+            //    }
+            //}
+            #endregion
         }
     }
 }
