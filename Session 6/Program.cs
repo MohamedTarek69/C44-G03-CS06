@@ -440,6 +440,32 @@ namespace Session_6
 
             #endregion
 
+            //-------------------------------------------- Part 14 (Part 1 in Session 1 OOP) --------------------------------------------
+            #region Boxing, Unboxing
+
+            #region Boxing[Value Type => Reference Type]
+            //int X = 100;
+
+            //object obj = /*(object)*/X;
+
+            //obj = 1.2;
+            //obj = 'A';
+            //obj = true;
+            //obj = 1.2m;
+
+            #endregion
+
+            #region Unboxing[Reference Type => Value Type]
+            object obj = 10;
+
+            //string Name = (string)obj;
+            int X = (int)obj;
+
+            Console.WriteLine(X);
+
+            #endregion
+
+            #endregion
         }
     }
 }
