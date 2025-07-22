@@ -45,6 +45,7 @@
             #endregion
 
             #endregion
+
             //-------------------------------------------- Part 03 --------------------------------------------
             #region 2D Array[Rectangular]
             //int[,] Marks = new int[2, 5] { { 100, 90, 30, 50, 40 },
@@ -122,6 +123,55 @@
 
             #endregion
 
+            //-------------------------------------------- Part 06 --------------------------------------------
+            #region Array Methods
+            //int[] Numbers = { 5, 3, 2, 4, 1 };
+
+            //for (int i = 0; i < Numbers.Length; i++)
+            //{
+            //    Console.WriteLine(Numbers[i]);
+            //}
+
+            //Console.WriteLine("After Sorting: ");
+            //Array.Sort(Numbers);
+
+            //for (int i = 0; i < Numbers.Length; i++)
+            //{
+            //    Console.WriteLine(Numbers[i]);
+            //}
+
+            //Console.WriteLine("After Reversing: ");
+            //Array.Reverse(Numbers);
+
+            //for (int i = 0; i < Numbers.Length; i++)
+            //{
+            //    Console.WriteLine(Numbers[i]);
+            //}
+
+            ////Console.WriteLine("After Clearing: ");
+            ////Array.Clear(Numbers);
+
+            ////for (int i = 0; i < Numbers.Length; i++)
+            ////{
+            ////    Console.WriteLine(Numbers[i]);
+            ////}
+
+            //// 5 , 3 , 2 , 4 , 1 
+            //Console.WriteLine("After Clearing: ");
+            //Array.Clear(Numbers,2,2);
+
+            //for (int i = 0; i < Numbers.Length; i++)
+            //{
+            //    Console.WriteLine(Numbers[i]);
+            //}
+
+            //Console.WriteLine(Array.IndexOf(Numbers,5));
+            //Console.WriteLine(Array.LastIndexOf(Numbers,5));
+
+            //Array.Resize(ref Numbers, 10);
+            //Array.
+
+            #endregion
 
         }
     }
