@@ -93,6 +93,16 @@ namespace Session_6
             return Sum;
         }
 
+        //-------------------------------------------- Part 12 --------------------------------------------
+        public static void SumSub(int x, int y, out int Sum, out int Sub)
+        {
+            Sum = x + y;
+            Sub = x - y;
+
+            //return new int[] {Sub,Sum};
+            //return [Sum, Sub];
+            //return new {Sum, Sub};
+        }
 
         #endregion
 
@@ -375,8 +385,12 @@ namespace Session_6
 
             #endregion
 
+            //-------------------------------------------- Part 12 --------------------------------------------
             #region Function Parameters[Passing By out]
+            //SumSub(10, 5, out int S, out int B);
 
+            //Console.WriteLine(S);
+            //Console.WriteLine(B);
 
             #endregion
 
