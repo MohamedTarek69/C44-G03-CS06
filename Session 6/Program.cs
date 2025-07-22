@@ -67,7 +67,7 @@
             //Console.WriteLine(Marks.GetLength(1));
 
             //int[,] Marks = new int[2, 5];
-            
+
             //for (int i = 0; i < Marks.GetLength(0); i++)
             //{
             //    Console.WriteLine($"The Grade Of Student Number {i + 1}");
@@ -91,6 +91,11 @@
             //        Console.WriteLine($"Subject Number {j + 1} : {Marks[i,j]}");
             //    }
             //    Console.WriteLine("============================");
+            //}
+            //-------------------------------------------- Part 04 --------------------------------------------
+            //for (int i = 0; i < Marks.Length; i++)
+            //{
+            //    Console.WriteLine(Marks[i / Marks.GetLength(1), i % Marks.GetLength(1)]);
             //}
 
             #endregion
