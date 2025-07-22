@@ -517,6 +517,18 @@ namespace Session_6
 
             #endregion
 
+            //-------------------------------------------- Part 16 (Part 3 in Session 1 OOP) --------------------------------------------
+            #region Nullable Reference Types
+            //#nullable enable
+            //string Name = null;
+
+            //#nullable disable
+            //string Name02 = null;
+            //Console.WriteLine(Name);
+            //Console.WriteLine(Name02);
+
+            #endregion
+
         }
     }
 }
