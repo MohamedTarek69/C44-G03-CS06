@@ -46,6 +46,28 @@ namespace Session_6
             X = Y;
             Y = Temp;
         }
+        //-------------------------------------------- Part 10 --------------------------------------------
+        public static int SumArray(int[] Arr)
+        {
+            int Sum = 0;
+            Arr[0]=100;
+            for (int i = 0; i < Arr.Length; i++)
+            {
+                Sum += Arr[i];
+            }
+            return Sum;
+        }
+
+        public static int SumArray(ref int[] Arr)
+        {
+            int Sum = 0;
+            Arr[0]=100;
+            for (int i = 0; i < Arr.Length; i++)
+            {
+                Sum += Arr[i];
+            }
+            return Sum;
+        }
 
         #endregion
 
@@ -263,21 +285,44 @@ namespace Session_6
 
             //-------------------------------------------- Part 09 --------------------------------------------
             #region Passing by Reference
-            int A = 9;
-            int B = 4;
-            Console.WriteLine(A);
-            Console.WriteLine(B);
-            Console.WriteLine("After Swapping: ");
-            Swap(ref A, ref B);
-            Console.WriteLine(A);
-            Console.WriteLine(B);
+            //int A = 9;
+            //int B = 4;
+            //Console.WriteLine(A);
+            //Console.WriteLine(B);
+            //Console.WriteLine("After Swapping: ");
+            //Swap(ref A, ref B);
+            //Console.WriteLine(A);
+            //Console.WriteLine(B);
 
             #endregion
 
             #endregion
 
+            //-------------------------------------------- Part 10 --------------------------------------------
             #region Function Parameters[Reference Type]
 
+            #region Passing By Value
+            //int[] Numbers = { 1, 2, 3 };
+
+            ////int[] Arr = Numbers;
+
+            //Console.WriteLine(SumArray(Numbers));
+            //Console.WriteLine(Numbers[0]);
+
+
+
+            #endregion
+
+            #region Passing By Reference
+            //int[] Numbers = { 1, 2, 3 };
+
+            ////int[] Arr = Numbers;
+
+            //Console.WriteLine(SumArray(ref Numbers));
+            //Console.WriteLine(Numbers[0]);
+
+
+            #endregion
 
             #endregion
 
