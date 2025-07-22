@@ -100,6 +100,26 @@
 
             #endregion
 
+            //-------------------------------------------- Part 05 --------------------------------------------
+            #region Jagged Array
+            //int[][] JaggedArr = new int[3][];
+
+            //JaggedArr[0] = new int[3] { 1, 2, 3 };
+            //JaggedArr[1] = new int[2] { 4, 5 };
+            //JaggedArr[2] = new int[1] { 6 };
+
+            ////JaggedArr[0][1] = 5;
+
+            //for (int i = 0; i < JaggedArr.Length; i++)
+            //{
+            //    for (int j = 0; j < JaggedArr[i].Length; j++)
+            //    {
+            //        Console.WriteLine(JaggedArr[i][j]);
+            //    }
+            //}
+
+            #endregion
+
             #endregion
 
 
