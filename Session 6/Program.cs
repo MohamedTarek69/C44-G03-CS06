@@ -529,6 +529,49 @@ namespace Session_6
 
             #endregion
 
+            //-------------------------------------------- Part 17 (Part 4 in Session 1 OOP) --------------------------------------------
+            #region Null-Conditional | Propagation operator
+            //Employee employee = new Employee()
+            //{
+            //    Id = 10,
+            //    Name = "Ahmed",
+            //    Department = new Department()
+            //    {
+            //        Id = 1,
+            //        Name = "HR"
+            //    }
+            //};
+            ////if(employee is not null)
+            ////{
+            ////    if(employee.Department is not null)
+            ////    {
+            ////        Console.WriteLine(employee.Name);
+            ////        Console.WriteLine(employee.Department.Name);
+            ////    }
+            ////}
+
+            //Console.WriteLine(employee?.Department?.Name ?? "Not Found");
+
+            //int[]? Number = { 1, 21, 3 };
+
+            //int Lenhth = Number?.Length ?? 0;
+
+            //// Number?.Length => 3
+            //// Number?.Length => null
+
+            //Console.WriteLine(Lenhth);
+
+            //if (Number is not null)
+            //{
+            //    for (int i = 0; i < Number.Length; i++)
+            //    {
+            //        Console.WriteLine(Number[i]);
+            //    }
+            //}
+
+            #endregion
+
+
         }
     }
 }
