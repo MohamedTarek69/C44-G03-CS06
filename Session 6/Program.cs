@@ -42,15 +42,10 @@
         #endregion
 
         #region Q3-(Method) Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers.
-        public static void Calculate(int[] Arr, out int sum, out int sub)
+        public static void Calculate(int num1, int num2,int num3, int num4, out int sum, out int sub)
         {
-            sum = Arr[0];
-            sub = Arr[0];
-            for (int i = 1; i < Arr.Length; i++)
-            {
-                sum += Arr[i];
-                sub -= Arr[i];
-            }
+            sum = num1 + num2 + num3 + num4;
+            sub = num1 - num2 - num3 - num4;
         }
         #endregion
 
@@ -87,7 +82,7 @@
         }
         #endregion
 
-        #region Q6- Create a function named MinMaxArray, to return the minimum and maximum values stored in an array, using reference parameters
+        #region Q6-(method) Create a function named MinMaxArray, to return the minimum and maximum values stored in an array, using reference parameters
         public static void MinMaxArray(ref int[] arr, ref int min, ref int max)
         {
             min = arr[0];
@@ -101,6 +96,16 @@
                 if (arr[i] > max)
                     max = arr[i];
             }
+        }
+        #endregion
+
+        #region Q7-(method) Create an iterative (non-recursive) function to calculate the factorial of the number specified as parameter
+        public static int Factorial(int number)
+        {
+            int result = 1;
+            for (int i = 2; i <= number; i++)
+                result *= i;
+            return result;
         }
         #endregion
 
@@ -178,20 +183,17 @@
 
             #region Q3- Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers.
             //Console.WriteLine("Please enter 4 numbers: ");
-            //int[] numbers = new int[4];
-
-            //for (int i = 0; i < numbers.Length;)
-            //{
-            //    Console.Write($"Number {i + 1}: ");
-            //    bool isParse = int.TryParse(Console.ReadLine(), out numbers[i]);
-            //    if (isParse)
-            //    {
-            //        i++;
-
-            //    }
-            //}
+            //int num1, num2, num3, num4;
+            //Console.Write("Number 1: ");
+            //int.TryParse(Console.ReadLine(), out num1);
+            //Console.Write("Number 2: ");
+            //int.TryParse(Console.ReadLine(), out num2);
+            //Console.Write("Number 3: ");
+            //int.TryParse(Console.ReadLine(), out num3);
+            //Console.Write("Number 4: ");
+            //int.TryParse(Console.ReadLine(), out num4);
             //int sum, sub;
-            //Calculate(numbers, out sum, out sub);
+            //Calculate(num1, num2, num3, num4, out sum, out sub);
             //Console.WriteLine($"The summation of the numbers is: {sum}");
             //Console.WriteLine($"The subtraction of the numbers is: {sub}");
 
@@ -254,6 +256,24 @@
             //Console.WriteLine($"The maximum value in the array is: {max}");
 
             #endregion
+
+            #region Q7- Create an iterative (non-recursive) function to calculate the factorial of the number specified as parameter
+            //int number;
+            //retry:
+            //Console.Write("Please enter a number to calculate its factorial: ");
+            //bool isParse = int.TryParse(Console.ReadLine(), out number);
+            //if (isParse && number > 0)
+            //{
+            //    int factorial = Factorial(number);
+            //    Console.WriteLine($"The factorial of {number} is: {factorial}");
+            //}
+            //else
+            //{
+            //    goto retry;
+            //}
+            #endregion
+
+
         }
     }
 }
