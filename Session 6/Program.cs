@@ -87,6 +87,23 @@
         }
         #endregion
 
+        #region Q6- Create a function named MinMaxArray, to return the minimum and maximum values stored in an array, using reference parameters
+        public static void MinMaxArray(ref int[] arr, ref int min, ref int max)
+        {
+            min = arr[0];
+            max = arr[0];
+
+            for (int i = 1; i < arr.Length; i++)
+            {
+                if (arr[i] < min)
+                    min = arr[i];
+
+                if (arr[i] > max)
+                    max = arr[i];
+            }
+        }
+        #endregion
+
         #endregion
         static void Main(string[] args)
         {
@@ -215,6 +232,27 @@
             //        Console.WriteLine($"{number} is not a prime number.");
             //    }
             //}
+            #endregion
+
+            #region Q6- Create a function named MinMaxArray, to return the minimum and maximum values stored in an array, using reference parameters
+            //Console.WriteLine("Please enter 5 numbers: ");
+            //int[] numbers = new int[5];
+
+            //for (int i = 0; i < numbers.Length;)
+            //{
+            //    Console.Write($"Number {i + 1}: ");
+            //    bool isParse = int.TryParse(Console.ReadLine(), out numbers[i]);
+            //    if (isParse)
+            //    {
+            //        i++;
+
+            //    }
+            //}
+            //int min = 0, max = 0;
+            //MinMaxArray(ref numbers, ref min, ref max);
+            //Console.WriteLine($"The minimum value in the array is: {min}");
+            //Console.WriteLine($"The maximum value in the array is: {max}");
+
             #endregion
         }
     }
