@@ -2,15 +2,44 @@
 {
     internal class Program
     {
-        #region Q1-(Methods) Explain the difference between passing (Value type parameters) by value and by reference then write a suitable c# example.
+        #region Methods
+
+        #region Q1-(Method) Explain the difference between passing (Value type parameters) by value and by reference then write a suitable c# example.
+        // Passing by value
         public static void IncrementNumber(int num)
         {
             num+=10;
         }
+        // Passing by reference
         public static void IncrementNumber(ref int num)
         {
             num += 10;
         }
+
+        #endregion
+
+        #region Q2-(Method) Explain the difference between passing (Reference type parameters) by value and by reference then write a suitable c# example.
+        public static void IncrementArray(int[] arr)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] += 10;
+            }
+            // Reassigning the array inside the method will NOT affect the original array
+            // So this will not affect the original array
+            arr = new int[] { 100, 200, 300 };
+        }
+        public static void IncrementArray(ref int[] arr)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] += 10;
+            }
+            // Reassigning the array will affect the original array since we're using ref
+            // So this will affect the original array
+            arr = new int[] { 100, 200, 300 };
+        }
+        #endregion
 
         #endregion
 
@@ -47,6 +76,45 @@
 
             #endregion
 
+            #region Q2-(Method) Explain the difference between passing (Reference type parameters) by value and by reference then write a suitable c# example.
+            /*
+             * Passing by value: means that a copy of the reference to the array is passed to the method
+             * so changes made to the elements inside the method affect the original array
+             * and in the method stack frame it create a variable that have the the same address to the heap as the orginal variable
+             * but if you try to reassign the array to a new array inside the method it will not affect the original array
+             */
+            /*
+             * Passing by reference: means that a reference to the original array is passed to the method
+             * so changes made to the elements inside the method affect the original array
+             * and in the method stack frame it doesn't create a variable that have the the same address to the heap as the orginal variable
+             * instead it uses the orginal variable directly
+             * here if you try to reassign the array to a new array inside the method it will affect the original array
+             */
+
+            //int[] numbers = { 1, 2, 3, 4, 5 };
+            //Console.WriteLine("Original array: ");
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    Console.Write($"{numbers[i]} ");
+            //}
+            //// Passing by value
+            //IncrementArray(numbers);
+            //Console.WriteLine("\nAfter passing the array by value: ");
+            //for(int i = 0; i < numbers.Length; i++)
+            //{
+            //    Console.Write($"{numbers[i]} ");
+            //}
+            //// Passing by reference
+            //IncrementArray(ref numbers);
+            //Console.WriteLine("\nAfter passing the array by reference: ");
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    Console.Write($"{numbers[i]} ");
+            //}
+
+
+            #endregion
+
         }
-}
+    }
 }
