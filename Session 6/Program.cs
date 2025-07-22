@@ -32,7 +32,15 @@ namespace Session_6
         }
 
         //-------------------------------------------- Part 08 --------------------------------------------
-        public static void Swap(int X, int Y)
+        public static void Swap(int X , int Y)
+        {
+            int Temp = X;
+            X = Y;
+            Y = Temp;
+        }
+
+        //-------------------------------------------- Part 09 --------------------------------------------
+        public static void Swap(ref int X , ref int Y)
         {
             int Temp = X;
             X = Y;
@@ -253,8 +261,16 @@ namespace Session_6
 
             #endregion
 
+            //-------------------------------------------- Part 09 --------------------------------------------
             #region Passing by Reference
-
+            int A = 9;
+            int B = 4;
+            Console.WriteLine(A);
+            Console.WriteLine(B);
+            Console.WriteLine("After Swapping: ");
+            Swap(ref A, ref B);
+            Console.WriteLine(A);
+            Console.WriteLine(B);
 
             #endregion
 
